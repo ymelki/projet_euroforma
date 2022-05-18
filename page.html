@@ -6,23 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sITE DDE VENTE</title>
 </head>
+<style>
+    nav {
+        border-bottom: 1px solid black;
+    }
+    
+    .crumbs ol {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .crumb {
+        display: inline-block;
+    }
+    
+    .crumb a::after {
+        display: inline-block;
+        color: #000;
+        content: '>';
+        font-size: 80%;
+        font-weight: bold;
+        padding: 0 3px;
+    }
+</style>
 <body>
-    <!-- balise H1 qui me permet de    -->
+
+    <nav class="crumbs">
+        <ol>
+            <li class="crumb"><a href="#">Bikes</a></li>
+            <li class="crumb"><a href="#">BMX</a></li>
+            <li class="crumb">Jump Bike 3000</li>
+        </ol>
+    </nav>
+
+
+    <!-- balise H1 qui me permet de mettre un titre  -->
     <h1> PAGE D INSCRIPTION </h1>
 
+     <!-- Debut du form  -->
     <form action="" method="get" class="form-example">
+         <!-- premiere div  -->
         <div class="form-example">
           <label for="name">Enter your name: </label>
+          <!-- INPUT TEXT  -->
           <input type="text" name="name" id="name" required>
         </div>
+        <!-- 2 div  -->
         <div class="form-example">
           <label for="email">Enter your email: </label>
-          <input type="email" name="email" id="email" required>
+          <!-- INPUT EMAIL  -->
+          <input type="email" name="email" id="email"  required>
         </div>
+        <!-- 3 div  -->
         <div class="form-example">
-          <input type="submit" value="Subscribe!">
+            <!-- INPUT ENVOIE  -->
+          <input type="submit" value="S'inscrire!">
         </div>
-      </form>
+    </form>
+
+    <!-- LISTE  NUMERO-->
+    <ol>
+        <li>Mix flour, baking powder, sugar, and salt.</li>
+        <li>In another bowl, mix eggs, milk, and oil.</li>
+        <li>Stir both mixtures together.</li>
+        <li>Fill muffin tray 3/4 full.</li>
+        <li>Bake for 20 minutes.</li>
+    </ol>
+
+    <!-- LISTE  puce-->
+    <ul>
+        <li>Mix flour, baking powder, sugar, and salt.</li>
+        <li>In another bowl, mix eggs, milk, and oil.</li>
+        <li>Stir both mixtures together.</li>
+        <li>Fill muffin tray 3/4 full.</li>
+        <li>Bake for 20 minutes.</li>
+    </ul>
+          
       
 </body>
 </html>
